@@ -1,0 +1,39 @@
+name: Validate IPTV Project
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate channel database
+        run: |
+          python scripts/validate.py
+
+      - name: Generate playlist
+        run: |
+          python scripts/generate_playlist.py
+
+      - name: Check generated playlist
+        run: |
+          test -f playlists/all.m3u
+
+      - name: Show generated playlist
+        run: |
+          cat playlists/all.m3u

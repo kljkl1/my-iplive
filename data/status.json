@@ -1,0 +1,10 @@
+{
+  "demo-news": {
+    "status": "online",
+    "http_status": 200
+  },
+  "demo-sports": {
+    "status": "offline",
+    "http_status": 404
+  }
+}

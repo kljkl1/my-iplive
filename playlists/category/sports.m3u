@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="demo-sports" tvg-name="Demo Sports" tvg-logo="https://example.com/sports.png" group-title="Sports",Demo Sports
+https://example.com/sports.m3u8

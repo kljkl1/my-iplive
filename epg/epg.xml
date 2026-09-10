@@ -1,0 +1,12 @@
+<channel id="demo-news">
+    <display-name>Demo News</display-name>
+</channel>
+
+<programme
+    start="20260910200000 +0000"
+    stop="20260910210000 +0000"
+    channel="demo-news">
+
+    <title>News</title>
+
+</programme>
