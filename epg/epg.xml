@@ -1,12 +1,26 @@
-<channel id="demo-news">
-    <display-name>Demo News</display-name>
-</channel>
+<?xml version="1.0" encoding="UTF-8"?>
+<tv generator-info-name="my-iplive">
 
-<programme
-    start="20260910200000 +0000"
-    stop="20260910210000 +0000"
-    channel="demo-news">
+    <channel id="demo-news">
+        <display-name>Demo News</display-name>
+    </channel>
 
-    <title>News</title>
+    <channel id="demo-sports">
+        <display-name>Demo Sports</display-name>
+    </channel>
 
-</programme>
+    <programme
+        start="20260911200000 +0000"
+        stop="20260911210000 +0000"
+        channel="demo-news">
+        <title>News</title>
+    </programme>
+
+    <programme
+        start="20260911210000 +0000"
+        stop="20260911220000 +0000"
+        channel="demo-sports">
+        <title>Sports</title>
+    </programme>
+
+</tv>

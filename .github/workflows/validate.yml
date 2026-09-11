@@ -30,6 +30,10 @@ jobs:
         run: |
           python scripts/generate_playlist.py
 
+       - name: Validate EPG
+        run: |
+          python scripts/validate_epg.py
+
       - name: Check generated playlist
         run: |
           test -f playlists/all.m3u
