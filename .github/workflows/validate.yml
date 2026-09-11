@@ -30,9 +30,21 @@ jobs:
         run: |
           python scripts/generate_playlist.py
 
-       - name: Validate EPG
+      - name: Validate EPG
         run: |
           python scripts/validate_epg.py
+
+      - name: Run unit tests
+        run: |
+          python -m unittest discover -s tests -v
+
+      - name: Test M3U importer
+        run: |
+          python scripts/import_m3u.py tests/sample.m3u -o tests/imported_channels.json
+
+      - name: Validate imported M3U data
+        run: |
+          python scripts/validate.py tests/imported_channels.json
 
       - name: Check generated playlist
         run: |
