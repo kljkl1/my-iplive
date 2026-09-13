@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-13T03:30:19.596249+00:00",
+  "updated_at": "2026-09-13T11:11:32.924632+00:00",
   "channels": {
     "demo-news": {
       "status": "offline",
       "http_status": 404,
-      "response_time_ms": 92,
+      "response_time_ms": 75,
       "content_type": "text/html",
       "error": "HTTP Error 404: Not Found"
     },
     "demo-sports": {
       "status": "offline",
       "http_status": 404,
-      "response_time_ms": 38,
+      "response_time_ms": 15,
       "content_type": "text/html",
       "error": "HTTP Error 404: Not Found"
     }
