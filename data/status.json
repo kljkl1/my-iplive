@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-11-03T00:36:29.931138+00:00",
+  "updated_at": "2026-11-03T13:42:51.528667+00:00",
   "channels": {
     "demo-news": {
       "status": "offline",
       "http_status": 404,
-      "response_time_ms": 94,
+      "response_time_ms": 67,
       "content_type": "text/html; charset=utf-8",
       "error": "HTTP Error 404: Not Found"
     },
